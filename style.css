@@ -1,0 +1,276 @@
+/*
+ * Elite Healthcare Consulting Website Styles
+ *
+ * This stylesheet defines the visual appearance of the site, emphasizing
+ * a luxurious and professional look through a refined color palette,
+ * elegant typography and carefully structured layouts. The design
+ * ensures legibility and aesthetic appeal across devices by using
+ * responsive units and flexible grid systems.
+ */
+
+/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #0a192f;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(6, 17, 60, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.navbar .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #E9C46A;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li + li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: #ffffff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    color: #E9C46A;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('hero_bg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 17, 60, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    color: #ffffff;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.75rem;
+    background: #E9C46A;
+    color: #06113C;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #dda15e;
+}
+
+/* Section Styles */
+.services-section,
+.about-section,
+.contact-section {
+    padding: 6rem 2rem 4rem;
+}
+
+.services-section {
+    background: #f5f7fa;
+}
+
+.about-section {
+    background: #ffffff;
+}
+
+.contact-section {
+    background: #f5f7fa;
+}
+
+section h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: #06113C;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-item {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.service-item h3 {
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+    color: #06113C;
+    font-size: 1.5rem;
+}
+
+.service-item p {
+    color: #333333;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* About Section */
+.about-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    color: #06113C;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #E9C46A;
+    box-shadow: 0 0 0 3px rgba(233, 196, 106, 0.3);
+}
+
+.form-response {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #06113C;
+    color: #ffffff;
+    font-size: 0.875rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        margin-top: 0.5rem;
+    }
+    .nav-links li + li {
+        margin-left: 1rem;
+    }
+}

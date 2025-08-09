@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elite Healthcare Consulting</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Elite Healthcare Consulting</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Consultation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Your Health, Our Priority</h1>
+            <p>Experience elite healthcare consulting tailored to your needs.</p>
+            <a href="#contact" class="btn">Book a Consultation</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>General Health Consultation</h3>
+                <p>
+                    Comprehensive consultations addressing general health concerns and
+                    preventive care strategies.
+                </p>
+            </div>
+            <div class="service-item">
+                <h3>Mental Health &amp; Wellbeing</h3>
+                <p>
+                    Professional guidance to support your mental health, stress
+                    management, and overall wellbeing.
+                </p>
+            </div>
+            <div class="service-item">
+                <h3>Nutrition &amp; Lifestyle</h3>
+                <p>
+                    Personalized nutrition plans and lifestyle recommendations to help you
+                    achieve your health goals.
+                </p>
+            </div>
+            <div class="service-item">
+                <h3>Specialist Referrals</h3>
+                <p>
+                    Connecting you with top medical specialists and arranging seamless
+                    referrals when necessary.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>
+            At Elite Healthcare Consulting, our mission is to provide personalized and
+            confidential health consultation services. With over two decades of
+            experience in healthcare, we bring expertise, compassion, and discretion
+            to every consultation. Our team of qualified professionals is dedicated
+            to guiding you through your health journey, ensuring that you receive
+            the best possible advice and care.
+        </p>
+    </section>
+
+    <!-- Contact/Consultation Section -->
+    <section id="contact" class="contact-section">
+        <h2>Apply for Consultation</h2>
+        <form id="consultation-form">
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+                <label for="consultation-type">Consultation Type</label>
+                <select id="consultation-type" name="consultation-type">
+                    <option value="General Health">General Health</option>
+                    <option value="Mental Health">Mental Health</option>
+                    <option value="Nutrition & Lifestyle">Nutrition &amp; Lifestyle</option>
+                    <option value="Specialist Referral">Specialist Referral</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="preferred-date">Preferred Date</label>
+                <input type="date" id="preferred-date" name="preferred-date" />
+            </div>
+            <div class="form-group">
+                <label for="message">Additional Notes</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Tell us more about your needs"
+                ></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <div id="form-response" class="form-response"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Elite Healthcare Consulting. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+</body>
+</html>
