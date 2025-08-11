@@ -220,3 +220,17 @@ footer {
     font-size: 2rem;
   }
 }
+
+/* Section background colors for visual separation */
+.services {
+  background-color: #f8f8f8;
+}
+
+.about {
+  background-color: #ffffff;
+}
+
+.contact {
+  background-color: #f8f8f8;
+}
+
