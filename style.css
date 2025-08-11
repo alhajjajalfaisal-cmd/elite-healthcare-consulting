@@ -1,7 +1,9 @@
 /*
  * Elite Healthcare Consulting Website Style
  *
- * This stylesheet defines a crisp, luxurious aesthetic for the site through a predominantly white palette paired with rich accent colours. The design emphasises spacious layouts, refined typography, and subtle shadows to create a high-end feel while maintaining excellent readability and user experience across devices.
+ * Minimalistic and professional design with a bright white background, refined typography,
+ * and subtle navy accents. The layout uses generous spacing and clean lines
+ * to convey the polished, trustworthy image of a respected consulting firm.
  */
 
 /* Reset & Global Styles */
@@ -13,8 +15,8 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  color: #06113C; /* deep navy for text */
-  background-color: #ffffff; /* white background */
+  color: #333333;
+  background-color: #ffffff;
   line-height: 1.6;
 }
 
@@ -28,19 +30,19 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10%;
-  background-color: #ffffff; /* white nav bar */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  padding: 15px 10%;
   z-index: 1000;
 }
 
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #06113C;
+  color: #0a3d62;
 }
 
 .navbar-links {
@@ -54,145 +56,112 @@ a {
 
 .navbar-links a {
   font-size: 1rem;
-  color: #06113C;
+  color: #333333;
   transition: color 0.3s ease;
 }
 
 .navbar-links a:hover {
-  color: #7D5BA6; /* luxurious accent */
+  color: #0a3d62;
 }
 
 /* Hero Section */
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-  background-color: #ffffff;
-  padding-top: 80px; /* space for fixed nav */
+  padding-top: 120px;
+  padding-bottom: 80px;
   text-align: center;
-  border-bottom: 1px solid #f0f0f0;
+  background-color: #ffffff;
 }
 
 .hero h1 {
   font-size: 3rem;
   font-weight: 700;
+  color: #0a3d62;
   margin-bottom: 20px;
-  color: #06113C;
 }
 
 .hero p {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin-bottom: 30px;
   color: #555555;
 }
 
 .btn {
   display: inline-block;
-  padding: 12px 30px;
-  background-color: #7D5BA6; /* accent colour */
-  color: #ffffff;
-  border-radius: 4px;
+  padding: 12px 28px;
+  border: 2px solid #0a3d62;
+  color: #0a3d62;
+  border-radius: 5px;
   font-size: 1rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #5f4489;
+  background-color: #0a3d62;
+  color: #ffffff;
 }
 
-/* Section Base */
+/* Section base */
 section {
   padding: 60px 10%;
 }
 
-/* Services Section */
-.services {
-  background-color: #ffffff;
-}
-
-.services h2 {
+/* Section headings */
+.services h2, .about h2, .contact h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 700;
-  margin-bottom: 50px;
-  color: #06113C;
+  color: #0a3d62;
+  margin-bottom: 40px;
 }
 
+/* Services Section */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 40px;
 }
 
 .service-card {
   background-color: #ffffff;
-  border: 1px solid #f0f0f0;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
   padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
 }
 
 .service-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  color: #06113C;
+  font-size: 1.4rem;
+  color: #0a3d62;
+  margin-bottom: 12px;
 }
 
 .service-card p {
-  font-size: 1rem;
   color: #555555;
+  font-size: 0.95rem;
 }
 
 /* About Section */
-.about {
-  background-color: #ffffff;
-}
-
-.about h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: #06113C;
-}
-
 .about-content {
   max-width: 900px;
   margin: 0 auto;
   font-size: 1.1rem;
-  line-height: 1.8;
   color: #555555;
+  line-height: 1.8;
 }
 
 /* Contact/Consultation Section */
-.contact {
-  background-color: #ffffff;
-}
-
-.contact h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: #06113C;
-}
-
 .form-container {
   max-width: 600px;
   margin: 0 auto;
   background-color: #ffffff;
   padding: 40px;
-  border: 1px solid #f0f0f0;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
 }
 
 .form-group {
@@ -201,41 +170,36 @@ section {
 
 .form-group label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   font-weight: 600;
-  color: #06113C;
+  color: #0a3d62;
 }
 
 .form-group input,
 .form-group textarea,
 .form-group select {
   width: 100%;
-  padding: 12px 15px;
-  border: 1px solid #dddddd;
+  padding: 12px 14px;
+  border: 1px solid #cccccc;
   border-radius: 4px;
   font-size: 1rem;
-  color: #06113C;
 }
 
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
+  border-color: #0a3d62;
   outline: none;
-  border-color: #7D5BA6;
 }
 
 /* Footer */
 footer {
-  background-color: #f8f8f8;
+  background-color: #f9f9f9;
   padding: 20px 0;
   text-align: center;
-  color: #06113C;
-  border-top: 1px solid #e6e6e6;
-}
-
-footer p {
-  margin: 0;
   font-size: 0.9rem;
+  color: #555555;
+  border-top: 1px solid #e5e5e5;
 }
 
 /* Responsive */
@@ -245,10 +209,6 @@ footer p {
   }
   .navbar-links li {
     margin-left: 20px;
-  }
-  .hero {
-    height: auto;
-    padding: 100px 5% 60px;
   }
   .hero h1 {
     font-size: 2.5rem;
