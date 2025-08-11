@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emkanat HealthCare Consulting</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Emkanat HealthCare Consulting</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Consultation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Your Health, Our Priority</h1>
+            <p>Experience distinguished healthcare consulting tailored to your needs.</p>
+            <a href="#contact" class="btn">Book a Consultation</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>Healthcare Strategy &amp; Transformation</h3>
+                <p>
+                    High-level strategic advice to healthcare providers and investors, focusing on organizational transformation, business planning and alignment with Saudi Arabia’s Vision 2030 health objectives.
+                </p>
+            </div>
+            <div class="service-item">
+                <h3>Pharma &amp; Biotech Consulting</h3>
+                <p>
+                    Specialized consulting for pharmaceutical and biotechnology organizations, covering market entry strategies, regulatory compliance and growth opportunities across the Kingdom’s healthcare sector.
+                </p>
+            </div>
+            <div class="service-item">
+                <h3>Operations &amp; Management Advisory</h3>
+                <p>
+                    Guidance on operational excellence and senior management, drawing on decades of leadership experience at major healthcare providers to optimize efficiency, improve quality and drive sustainable growth.
+                </p>
+            </div>
+            <div class="service-item">
+                <h3>Medical Equipment &amp; Technology</h3>
+                <p>
+                    Support with selecting, procuring and integrating medical equipment and digital health technologies, ensuring that your organization stays at the forefront of innovation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>
+            Emkanat HealthCare Consulting is led by a results-driven healthcare executive with over 23 years of experience in Saudi Arabia and the GCC. He specializes in healthcare operations, facility management and performance optimization, and has a proven track record of transforming healthcare facilities into high-performing organizations. His leadership spans CEO and COO roles, guiding turnaround strategies, mergers, acquisitions, and IPO preparations. He holds an MSc in Healthcare Management and an MBA from the Swiss Business School, with professional certifications in executive leadership, strategic planning, and healthcare quality management. Emkanat HealthCare Consulting is committed to delivering operational excellence, ensuring sustainable growth and elevating healthcare standards in the region.
+        </p>
+    </section>
+
+    <!-- Contact/Consultation Section -->
+    <section id="contact" class="contact-section">
+        <h2>Apply for Consultation</h2>
+        <form id="consultation-form">
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+                <label for="consultation-type">Consultation Type</label>
+                <select id="consultation-type" name="consultation-type">
+                    <option value="Strategy &amp; Transformation">Strategy &amp; Transformation</option>
+                    <option value="Pharma &amp; Biotech">Pharma &amp; Biotech</option>
+                    <option value="Operations &amp; Management">Operations &amp; Management</option>
+                    <option value="Equipment &amp; Technology">Equipment &amp; Technology</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="preferred-date">Preferred Date</label>
+                <input type="date" id="preferred-date" name="preferred-date" />
+            </div>
+            <div class="form-group">
+                <label for="additional-info">Additional Information</label>
+                <textarea id="additional-info" name="additional-info" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Emkanat HealthCare Consulting</p>
+    </footer>
+</body>
+</html>
